@@ -1,7 +1,10 @@
 <template>
-  <div class="home">
+<div>
+  <menuTop class="mb-12"></menuTop>
+  <v-spacer class="mb-12"></v-spacer>
+  <div class="home" >
     <!-- inicio com imagem -->
-    <div class="d-flex justify-end " :class="$vuetify.breakpoint.smAndDown ? 'mx-1 pl-6' : 'mx-4 pl-10' " style="background-color: #161840;">
+    <div id="section1"  class="d-flex justify-end " :class="$vuetify.breakpoint.smAndDown ? 'mx-1 pl-6' : 'mx-4 pl-10' " style="background-color: #161840;">
       <v-img
       class=" px-10 d-flex align-center"
       :src="require('@/assets/img/inicial1.png')"
@@ -19,39 +22,43 @@
       </v-img>
     </div>
     <!-- inicio com imagem fim -->
-    
-    <!-- titulo sobre o que e -->
-    <v-row style="background-color: #161840;" class="d-flex justify-center align-center" :class="$vuetify.breakpoint.smAndDown ? 'ma-1 py-3' : 'ma-4 py-8' ">
-      <div>
-          <p class="title-topcs ma-0">O QUE É A PLANILHA DE GESTÃO?</p>
-          <hr class="mt-1 line">
-      </div>
-    </v-row>
-    <!-- texto sobre o que e -->
-    <v-row class="d-flex justify-center align-center " :class="$vuetify.breakpoint.smAndDown ? 'ma-1 py-1' : 'ma-2 py-8'">
-      <v-col cols="10">
-        <p class="text-description-big" :class="$vuetify.breakpoint.smAndDown ? 'mb-2' : 'mb-6'">
-          Nós sabemos como é difícil, como autônomos, gerir o nosso escritório e ainda realizar os projetos.
-          Muitas vezes fazemos essas duas funções sozinho ou com uma equipe bem reduzida. 
-          Isso acaba prejudicando nosso desempenho nas duas áreas e não temos a ideia se nossa 
-          empresa está lucrando ou nos dando prejuízos.
-        </p>
-        <p class="text-description-big" :class="$vuetify.breakpoint.smAndDown ? 'mb-2' : 'mb-6'">
-          Nossa planilha possibilita o gerenciamento de clientes, 
-          fornecedores, planejamento e relatórios financeiros. Além de você conseguir 
-          planejar e monitorar todos os custos e despesas da sua empresa, você também 
-          consegue criar orçamentos de projetos com base nesses custos aumentando a sua produtividade. 
-        </p>
-        <p class="text-description-big" >
-          Todos esses benefícios em um único e simples arquivo, sem necessidade de programação, 
-          sem mensalidade e com atualizações gratuitas. 
-        </p>
-      </v-col>
-    </v-row>
-    <!-- texto sobre o que e fim -->
+
+    <!-- sobre o que e -->
+    <div id="section2" >
+      <!-- titulo sobre o que e -->
+      <v-row style="background-color: #161840;" class="d-flex justify-center align-center" :class="$vuetify.breakpoint.smAndDown ? 'ma-1 py-3' : 'ma-4 py-8' ">
+        <div >
+            <p class="title-topcs ma-0">O QUE É A PLANILHA DE GESTÃO?</p>
+            <hr class="mt-1 line">
+        </div>
+      </v-row>
+      <!-- texto sobre o que e -->
+      <v-row class="d-flex justify-center align-center " :class="$vuetify.breakpoint.smAndDown ? 'ma-1 py-1' : 'ma-2 py-8'">
+        <v-col cols="10">
+          <p class="text-description-big" :class="$vuetify.breakpoint.smAndDown ? 'mb-2' : 'mb-6'">
+            Nós sabemos como é difícil, como autônomos, gerir o nosso escritório e ainda realizar os projetos.
+            Muitas vezes fazemos essas duas funções sozinho ou com uma equipe bem reduzida. 
+            Isso acaba prejudicando nosso desempenho nas duas áreas e não temos a ideia se nossa 
+            empresa está lucrando ou nos dando prejuízos.
+          </p>
+          <p class="text-description-big" :class="$vuetify.breakpoint.smAndDown ? 'mb-2' : 'mb-6'">
+            Nossa planilha possibilita o gerenciamento de clientes, 
+            fornecedores, planejamento e relatórios financeiros. Além de você conseguir 
+            planejar e monitorar todos os custos e despesas da sua empresa, você também 
+            consegue criar orçamentos de projetos com base nesses custos aumentando a sua produtividade. 
+          </p>
+          <p class="text-description-big" >
+            Todos esses benefícios em um único e simples arquivo, sem necessidade de programação, 
+            sem mensalidade e com atualizações gratuitas. 
+          </p>
+        </v-col>
+      </v-row>
+      <!-- texto sobre o que e fim -->
+    </div>
+    <!-- sobre o que e fim -->
     
     <!-- para quem e a planilha -->
-    <v-row :class="$vuetify.breakpoint.smAndDown ? 'ma-1 px-5' : 'ma-4 px-10'" style="background-color: #ffd65b;" >
+    <v-row  id="section3" :class="$vuetify.breakpoint.smAndDown ? 'ma-1 px-5' : 'ma-4 px-10'" style="background-color: #ffd65b;" >
       <v-col cols="6" class="pa-0">
         <v-img
           v-if="$vuetify.breakpoint.mdAndUp"
@@ -94,7 +101,7 @@
     <!-- para quem e a planilha fim -->
 
     <!-- quem somos -->
-    <v-row class="div-back-section4 " :class="$vuetify.breakpoint.smAndDown ? 'ma-1 pl-5 mb-2' : 'ma-4 pl-4 mb-10'" style="background-color: #161840">
+    <v-row id="section4"  class="div-back-section4 " :class="$vuetify.breakpoint.smAndDown ? 'ma-1 pl-5 mb-2' : 'ma-4 pl-4 mb-10'" style="background-color: #161840">
       <div class="color-back-section4" style="background-color: #ffffff;" :class="$vuetify.breakpoint.smAndDown ? 'pl-3' : 'pl-8'" >
         <v-col class="px-0" style="background-color: #ffffff;">
             <p class="title-topcs ma-0" style="color:#1f2c30">QUEM SOMOS?</p>
@@ -135,7 +142,7 @@
     </v-row>
  
     <!-- section beneficios -->
-    <div style="background-color: #1f2c30;" class="d-flex flex-column justify-space-around align-center" :class="$vuetify.breakpoint.smAndDown ? 'ma-1 px-14 ' : 'ma-4 px-10 '">
+    <div id="section5"  style="background-color: #1f2c30;" class="d-flex flex-column justify-space-around align-center" :class="$vuetify.breakpoint.smAndDown ? 'ma-1 px-14 ' : 'ma-4 px-10 '">
       <div :class="$vuetify.breakpoint.smAndDown ? 'my-4' : 'my-10' ">
           <p class="title-topcs ma-0">BENEFÍCIOS</p>
           <hr class="my-1 line">
@@ -181,125 +188,131 @@
     </div>
     <!-- section beneficios -->
 
-     <!-- o que tem na planilha titulo -->
-    <v-row style="background-color: #161840;" class="d-flex justify-center align-center" :class="$vuetify.breakpoint.smAndDown ? 'ma-1 py-3' : 'ma-4 py-8'">
-      <div>
-          <p class="title-topcs ma-0">O QUE TEM NA PLANILHA?</p>
-          <hr class="my-1 line">
-      </div>
-    </v-row>
-    <!-- texto sobre o que tem -->
-    <v-row no-gutters class="d-flex justify-space-around align-center" :class="$vuetify.breakpoint.smAndDown ? 'ma-1 py-2' : 'ma-2 py-8'">
-      <v-col cols="5">
-        <ul>
-          <li class="text-description-small mb-1">
-            Formulário para cadastro de clientes e fornecedores;
-          </li>
-          <li class="text-description-small mb-1">
-            Acesso gratuito as atualizações;
-          </li>
-          <li class="text-description-small mb-1">
-            Planilha financeira para custos e despesas;
-          </li>
-          <li class="text-description-small mb-1">
-            Emissão de recibo automático para clientes e fornecedores por serviços prestados;
-          </li>
-        </ul>
-      </v-col>
-      <v-col cols="5">
-        <ul>
-          <li class="text-description-small mb-1">
-            Modelo de etapas do seu projeto totalmente personalizável;
-          </li>
-          <li class="text-description-small mb-1">
-            Modelo de despesas do seu escritório totalmente personalizável;
-          </li>
-          <li class="text-description-small mb-1">
-            Calendário para eventos, compromissos importantes e aniversariantes do dia.
-          </li>
-        </ul>
-      </v-col>
-    </v-row>
-    <!-- texto sobre o que tem fim-->
+    <!-- o que tem na planilha  -->
+    <div id="section6" >
+      <!-- o que tem na planilha titulo -->
+      <v-row style="background-color: #161840;" class="d-flex justify-center align-center" :class="$vuetify.breakpoint.smAndDown ? 'ma-1 py-3' : 'ma-4 py-8'">
+        <div>
+            <p class="title-topcs ma-0">O QUE TEM NA PLANILHA?</p>
+            <hr class="my-1 line">
+        </div>
+      </v-row>
+      <!-- texto sobre o que tem -->
+      <v-row no-gutters class="d-flex justify-space-around align-center" :class="$vuetify.breakpoint.smAndDown ? 'ma-1 py-2' : 'ma-2 py-8'">
+        <v-col cols="5">
+          <ul>
+            <li class="text-description-small mb-1">
+              Formulário para cadastro de clientes e fornecedores;
+            </li>
+            <li class="text-description-small mb-1">
+              Acesso gratuito as atualizações;
+            </li>
+            <li class="text-description-small mb-1">
+              Planilha financeira para custos e despesas;
+            </li>
+            <li class="text-description-small mb-1">
+              Emissão de recibo automático para clientes e fornecedores por serviços prestados;
+            </li>
+          </ul>
+        </v-col>
+        <v-col cols="5">
+          <ul>
+            <li class="text-description-small mb-1">
+              Modelo de etapas do seu projeto totalmente personalizável;
+            </li>
+            <li class="text-description-small mb-1">
+              Modelo de despesas do seu escritório totalmente personalizável;
+            </li>
+            <li class="text-description-small mb-1">
+              Calendário para eventos, compromissos importantes e aniversariantes do dia.
+            </li>
+          </ul>
+        </v-col>
+      </v-row>
+      <!-- texto sobre o que tem fim-->
+    </div>
+    <!-- o que tem na planilha fim -->
 
     <!-- texto depoimentos -->
-    <v-row style="background-color: #ffd65b;" class="d-flex justify-center align-center " :class="$vuetify.breakpoint.smAndDown ? 'ma-1 pt-4' : 'ma-4 pt-12'">
-      <div>
-          <p class="title-topcs ma-0" style="color: #1f2c30">DEPOIMENTOS</p>
-          <hr class="my-1 line" style="background-color: #161840;">
-      </div>
-    </v-row>
-    <v-row class="d-flex justify-space-around align-center ma-2" :class="$vuetify.breakpoint.smAndDown ? 'py-3' : 'py-8' ">
-      <div class="div-back-section7">
-        <v-card class="img-depoiment-section7" :width="$vuetify.breakpoint.smAndDown ? '220' : '400' ">
-          <v-img
-            class="img-depoiment"
-            :src="require('@/assets/img/depoiment/dp-text1.png')"
-          >
-          </v-img>
-        </v-card>
-        <div class="mt-8 img-people-section7">
-          <v-avatar :size="$vuetify.breakpoint.smAndDown ? '98' : '150' ">
-            <img
-            class="img-depoiment img-pelople-depoiment"
-            alt="user"
-            :src="require('@/assets/img/depoiment/dp1.jpg')"
-            >
-          </v-avatar>
-          <p :class="$vuetify.breakpoint.smAndDown ? '' : 'ml-3'">
-            Livia Oliveira
-          </p>
+    <div id="section7" >
+      <v-row style="background-color: #ffd65b;" class="d-flex justify-center align-center " :class="$vuetify.breakpoint.smAndDown ? 'ma-1 pt-4' : 'ma-4 pt-12'">
+        <div>
+            <p class="title-topcs ma-0" style="color: #1f2c30">DEPOIMENTOS</p>
+            <hr class="my-1 line" style="background-color: #161840;">
         </div>
-      </div>
+      </v-row>
+      <v-row class="d-flex justify-space-around align-center ma-2" :class="$vuetify.breakpoint.smAndDown ? 'py-3' : 'py-8' ">
+        <div class="div-back-section7">
+          <v-card class="img-depoiment-section7" :width="$vuetify.breakpoint.smAndDown ? '220' : '400' ">
+            <v-img
+              class="img-depoiment"
+              :src="require('@/assets/img/depoiment/dp-text1.png')"
+            >
+            </v-img>
+          </v-card>
+          <div class="mt-8 img-people-section7">
+            <v-avatar :size="$vuetify.breakpoint.smAndDown ? '98' : '150' ">
+              <img
+              class="img-depoiment img-pelople-depoiment"
+              alt="user"
+              :src="require('@/assets/img/depoiment/dp1.jpg')"
+              >
+            </v-avatar>
+            <p :class="$vuetify.breakpoint.smAndDown ? '' : 'ml-3'">
+              Livia Oliveira
+            </p>
+          </div>
+        </div>
 
-      <div class="div-back-section7 ">
-        <v-card class="img-depoiment-section7" :width="$vuetify.breakpoint.smAndDown ? '220' : '400' ">
-          <v-img
-            class="img-depoiment"
-            :src="require('@/assets/img/depoiment/dp-text2.png')"
-          >
-          </v-img>
-        </v-card>
-        <div class="mt-8 img-people-section7 ">
-          <v-avatar :size="$vuetify.breakpoint.smAndDown ? '98' : '150' ">
-            <img
-            class="img-depoiment img-pelople-depoiment"
-            alt="user"
-            :src="require('@/assets/img/depoiment/dp2.jpg')"
+        <div class="div-back-section7 ">
+          <v-card class="img-depoiment-section7" :width="$vuetify.breakpoint.smAndDown ? '220' : '400' ">
+            <v-img
+              class="img-depoiment"
+              :src="require('@/assets/img/depoiment/dp-text2.png')"
             >
-          </v-avatar>
-          <p :class="$vuetify.breakpoint.smAndDown ? '' : 'ml-3'">
-            Júlia Andrade
-          </p>
+            </v-img>
+          </v-card>
+          <div class="mt-8 img-people-section7 ">
+            <v-avatar :size="$vuetify.breakpoint.smAndDown ? '98' : '150' ">
+              <img
+              class="img-depoiment img-pelople-depoiment"
+              alt="user"
+              :src="require('@/assets/img/depoiment/dp2.jpg')"
+              >
+            </v-avatar>
+            <p :class="$vuetify.breakpoint.smAndDown ? '' : 'ml-3'">
+              Júlia Andrade
+            </p>
+          </div>
         </div>
-      </div>
 
-      <div class="div-back-section7 ">
-        <v-card class="img-depoiment-section7" :width="$vuetify.breakpoint.smAndDown ? '220' : '400' ">
-          <v-img
-            class="img-depoiment"
-            :src="require('@/assets/img/depoiment/dp-text3.png')"
-          >
-          </v-img>
-        </v-card>
-        <div class="mt-8 img-people-section7 ">
-          <v-avatar :size="$vuetify.breakpoint.smAndDown ? '98' : '150' ">
-            <img
-            class="img-depoiment img-pelople-depoiment"
-            alt="user"
-            :src="require('@/assets/img/depoiment/dp3.jpg')"
+        <div class="div-back-section7 ">
+          <v-card class="img-depoiment-section7" :width="$vuetify.breakpoint.smAndDown ? '220' : '400' ">
+            <v-img
+              class="img-depoiment"
+              :src="require('@/assets/img/depoiment/dp-text3.png')"
             >
-          </v-avatar>
-          <p :class="$vuetify.breakpoint.smAndDown ? '' : 'ml-3'">
-            Laís Campos
-          </p>
+            </v-img>
+          </v-card>
+          <div class="mt-8 img-people-section7 ">
+            <v-avatar :size="$vuetify.breakpoint.smAndDown ? '98' : '150' ">
+              <img
+              class="img-depoiment img-pelople-depoiment"
+              alt="user"
+              :src="require('@/assets/img/depoiment/dp3.jpg')"
+              >
+            </v-avatar>
+            <p :class="$vuetify.breakpoint.smAndDown ? '' : 'ml-3'">
+              Laís Campos
+            </p>
+          </div>
         </div>
-      </div>
-    </v-row>
+      </v-row>
+    </div>
     <!-- texto depoimentos fim -->
 
     <!-- preco planilha -->
-    <div style="background-color: #1f2c30;" class="d-flex flex-column justify-space-around align-center" :class="$vuetify.breakpoint.smAndDown ? 'ma-1 px-2' : 'ma-4 px-10'">
+    <div id="section8" style="background-color: #1f2c30;" class="d-flex flex-column justify-space-around align-center" :class="$vuetify.breakpoint.smAndDown ? 'ma-1 px-2' : 'ma-4 px-10'">
       <div class="my-5">
           <p class="title-topcs ma-0" style="text-shadow: black 0.1em 0.1em 0.2em;">FAÇA SUA INSCRIÇÃO</p>
       </div>
@@ -333,7 +346,7 @@
     <!-- preco planilha fim-->
 
     <!-- garantia  -->
-    <div style="background-color: #161840;" class="d-flex flex-column justify-space-around align-center" :class="$vuetify.breakpoint.smAndDown ? 'ma-1 px-3 mt-2' : 'ma-4 px-10 mt-4'">
+    <div id="section9"  style="background-color: #161840;" class="d-flex flex-column justify-space-around align-center" :class="$vuetify.breakpoint.smAndDown ? 'ma-1 px-3 mt-2' : 'ma-4 px-10 mt-4'">
       <div :class="$vuetify.breakpoint.smAndDown ? 'my-4' : 'my-10' ">
           <p class="title-topcs ma-0">GARANTIA</p>
           <hr class="my-1 line">
@@ -361,7 +374,7 @@
     <!-- garantia fim -->
 
     <!-- principais duvidas 1 -->
-    <div class="d-flex flex-column justify-space-around align-center" :class="$vuetify.breakpoint.smAndDown ? 'ma-1 px-5 mt-2 ' : 'ma-4 px-10 mt-4'">
+    <div id="section10" class="d-flex flex-column justify-space-around align-center" :class="$vuetify.breakpoint.smAndDown ? 'ma-1 px-5 mt-2 ' : 'ma-4 px-10 mt-4'">
       <div :class="$vuetify.breakpoint.smAndDown ? 'my-3' : 'my-10'">
           <p class="title-topcs ma-0" style="color: #1f2c30">PRINCIPAIS DÚVIDAS</p>
           <hr class="my-1 line">
@@ -564,13 +577,17 @@
     </div>
     <!-- duvidas fim -->
   </div>
+</div>
 </template>
 
 <script>
 // @ is an alias to /src
-
+import menuTop from '@/components/menuTop.vue';
 export default {
   name: "Home",
+   components:{
+    menuTop
+  },
 };
 </script>
 
