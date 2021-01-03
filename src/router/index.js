@@ -65,6 +65,12 @@ const routes = [
     name: "section10",
     component: Home,
     meta: { mobileTo: '#section10' }
+  },
+  {
+    path: "/",
+    name: "section11",
+    component: Home,
+    meta: { mobileTo: '#section11' }
   }
 ];
 // custom scrolling behavior leveraging route meta info

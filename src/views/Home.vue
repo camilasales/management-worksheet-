@@ -91,7 +91,7 @@
           :height="$vuetify.breakpoint.smAndDown ? '30px' : ''"
           :src="require('@/assets/img/seta-escura.png')"
           >
-          <a class="link-planilha " :class="$vuetify.breakpoint.smAndDown ? 'px-6 py-3' : 'px-12 py-5'" href="https://sacola.pagseguro.uol.com.br/31a7c5b2-ab94-4111-baaa-7e4cbf5376c6" target="_blank" rel="noopener noreferrer">
+          <a class="link-planilha " :class="$vuetify.breakpoint.smAndDown ? 'px-6 py-3' : 'px-12 py-5'" href="https://pay.hotmart.com/G43462139J?checkoutMode=2" target="_blank" rel="noopener noreferrer">
               <span >GARANTA A</span><br>
               <span>SUA PLANILHA</span>
           </a>
@@ -334,7 +334,8 @@
           :height="$vuetify.breakpoint.smAndDown ? '30px' : ''"
           :src="require('@/assets/img/seta-branca.png')"
           >
-          <a class="link-planilha " :class="$vuetify.breakpoint.smAndDown ? 'px-6 py-3' : 'px-12 py-5'" style="background-color: #ffd65b; color:#ffffff" href="https://sacola.pagseguro.uol.com.br/31a7c5b2-ab94-4111-baaa-7e4cbf5376c6" target="_blank" rel="noopener noreferrer">
+          <a class="link-planilha " :class="$vuetify.breakpoint.smAndDown ? 'px-6 py-3' : 'px-12 py-5'" 
+          style="background-color: #ffd65b; color:#ffffff" href="https://pay.hotmart.com/G43462139J?checkoutMode=2" target="_blank" rel="noopener noreferrer">
               <span >GARANTA SUA</span><br>
               <span>PLANILHA</span>
           </a>
@@ -523,7 +524,8 @@
             <br>
             Clique no botão abaixo e garanta já sua planilha de gestão!
           </p>
-          <a class="link-planilha " :class="$vuetify.breakpoint.smAndDown ? 'px-6 py-3 mt-3' : 'px-12 py-5 mt-10'"   style="background-color: #ffd65b; color:#ffffff" href="https://sacola.pagseguro.uol.com.br/31a7c5b2-ab94-4111-baaa-7e4cbf5376c6" target="_blank" rel="noopener noreferrer">
+          <a class="link-planilha " :class="$vuetify.breakpoint.smAndDown ? 'px-6 py-3 mt-3' : 'px-12 py-5 mt-10'"   
+          style="background-color: #ffd65b; color:#ffffff" href="https://pay.hotmart.com/G43462139J?checkoutMode=2" target="_blank" rel="noopener noreferrer">
               <span >GARANTA A</span><br>
               <span>SUA PLANILHA</span>
           </a>
@@ -536,7 +538,7 @@
     <!-- economize o seu tempo fim -->
 
     <!-- duvidas -->
-    <div class="d-flex flex-column justify-top align-center" :class="$vuetify.breakpoint.smAndDown ? 'ma-1 pr-8 mt-2 ' : 'ma-4 pr-12 mt-4 '" style="background-color: #ffd65b;">
+    <div id="section11"  class="d-flex flex-column justify-top align-center" :class="$vuetify.breakpoint.smAndDown ? 'ma-1 pr-8 mt-2 ' : 'ma-4 pr-12 mt-4 '" style="background-color: #ffd65b;">
       <v-img
       class=" px-10 d-flex align-center"
       :src="require('@/assets/img/duvidas2.png')"

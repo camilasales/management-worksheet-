@@ -88,6 +88,11 @@ export default {
           href:"section10",
           target: 88
         },
+        {
+          name:"Contato",
+          href:"section11",
+          target: 88
+        },
       ],
       target: 9999,
       computed: {
