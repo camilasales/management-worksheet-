@@ -393,7 +393,7 @@
             A planilha funciona tanto em dispositivos com sistema operacional Windows quanto MacOS?
           </span>
           <br>
-          Garantimos apenas o funcionamento em dispositivos com Sistema Operacional Microsoft Windows.
+           A planilha funciona apenas em dispositivos com Sistema Operacional Microsoft Windows.
         </p>
       </v-col>
       
@@ -612,14 +612,14 @@ export default {
   text-shadow: black 0.1em 0.1em 0.2em;
   letter-spacing: 1px;
   margin: 0;
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: 'Merriweather Sans', sans-serif;
 }
 .sub-title-small{
   font-size: 1.5vw;
   text-shadow: none;
   color: #ffd65b; 
   text-align: center;
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: 'Merriweather Sans', sans-serif;
 }
 .title-topcs{
   color:#ffffff;
@@ -651,7 +651,7 @@ export default {
   font-size: 1.6vw;
   letter-spacing: 1px;
   text-shadow: black 0.1em 0.1em 0.2em;
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: 'Merriweather Sans', sans-serif;
   text-align: center;
   margin: 0;
 }
