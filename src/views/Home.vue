@@ -325,9 +325,9 @@
           por tempo LIMITADO! <br>
         </p>
         <p class="text-description-big my-2" style="text-align: center; color: #ffffff; font-size: 4vw !important;">
-          De <span style="text-decoration: line-through; text-decoration-color: #ed1c00a9;">500,00</span>  <br>
-          por <span style="color:#4AE0E0; font-size: 4.5vw !important;">R$ 297,90</span>  <br>
-          ou até 12x R$ 29,91
+          De <span style="text-decoration: line-through; text-decoration-color: #ed1c00a9;">197,90</span>  <br>
+          por <span style="color:#4AE0E0; font-size: 4.5vw !important;">R$ 147,90</span>  <br>
+          ou até 12x R$ 14,85
         </p>
         <v-col class="d-flex flex-row justify-center align-center mr-12" >
          <img
